@@ -1,0 +1,60 @@
+.carosuel{
+    position: relative;
+    width: 85%;
+    background-color: #c7e0dc;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px 20px 20px;
+    @media screen and (max-width: 768px){
+        flex-wrap: wrap;
+    }
+    .col{
+        padding: 50px;
+        text-align: center;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        border-right: 1px solid white;
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         border-right: none;
+         
+        border-bottom: 1px solid white;
+
+        }
+             p{
+                color:#55726d;
+                font-size: 14px;
+          font-family: Noto Sans;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 24px;
+                }
+             }
+        
+        .span{
+            color:#46645f;
+            font-size: 2rem;
+            font-weight: bolder;
+            padding-bottom: 20px;
+        }
+        img{
+            width: 160px;
+            position: absolute;
+            top: -30%;
+            @media screen and (max-width: 768px) {
+                position: static;
+            }
+        }
+    }
+    .col:nth-child(3){
+        border-right:none ;
+        @media screen and (max-width: 768px) {
+            border-bottom: none ;
+        }
+    }
+}

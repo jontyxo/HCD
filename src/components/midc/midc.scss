@@ -1,0 +1,138 @@
+.midc {
+    padding-top: 134px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(#fceee4, white);
+  
+    img {
+      width: 300px;
+    }
+  
+    .col{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .item {
+        padding-top: 20px;
+        height: 420px;
+        width: 75%;
+         
+        column-count: 2;
+        @media screen and (max-width: 768px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          
+          justify-content: center;
+          height: 100%;
+          span {
+            align-items:center;
+            font-size: 2rem;
+          }    
+          // img {
+          //   width: 80%;
+            
+          // }
+        }
+        .left {
+          height: 100%;
+          display: flex;
+          span {
+            font-size: 2rem;
+          }
+          // img {
+          //   width: 50%;
+          //   height: auto;
+          // }
+        }
+  
+        p{
+          @media screen and (max-width: 768px) {
+            text-align: center;
+          }
+        }
+      }
+    }
+  
+    .content .item:nth-child(odd){
+      
+      .left{
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        @media screen and (max-width: 768px) {
+          align-items: center;
+          padding-top: 30px;
+          
+        }
+        
+  p{
+    font-family: Open Sans;
+    font-weight: bolder;
+
+    @media screen and (max-width: 768px) {
+      text-align:left;
+      
+    }
+  }
+      }
+      .right{
+        img{
+          width:420px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        flex-wrap:wrap-reverse;
+      }
+    }
+  
+    .content .item:nth-child(even){
+      
+  
+      @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+  
+      .left{
+        img{
+          width:420px;
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+      .right{
+        padding-left: 30px;
+        width: 60%;
+        @media screen and (max-width: 768px) {
+          padding-top: 30px;
+          align-items: center;
+          width: 100%;
+        }
+        p{
+          font-family: Open Sans;
+    font-weight: bolder;
+
+
+          @media screen and (max-width: 768px){
+            text-align:left;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
