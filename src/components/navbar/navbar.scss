@@ -1,125 +1,118 @@
 .navbar {
-    width: 100%;
-    padding-top: 2%;
-    background-color: #ffb692;
-    display: flex;
-    justify-content: center;
-    @media only screen and (max-width: 768px) {
-      .burger-menu{
-        display: inline-block;
-        cursor: pointer;
-        position: absolute;
-        top: 8px;
-        right: 20px;
-        z-index: 20;
-        
-        .bar1, .bar2 {
-          width: 40px;
-          height: 5px;
-          background-color: #333;
-          margin: 6px 0;
-          transition: 0.4s;
-        }
-        .bar1{
-          margin-bottom: 12px;
-        }
-        .bar2{
-          margin-left: 10px;
-          width: 30px;
-        }
-        
-        .change .bar1 {
-          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-          transform: rotate(-45deg) translate(-9px, 6px);
-        }
-        
-        
-        
-        .change .bar2 {
-          -webkit-transform: rotate(45deg) translate(-8px, -8px);
-          transform: rotate(45deg) translate(-8px, -8px);
-        }
-      }
-      .burger-menu.active{
-          position: fixed;
-        .bar1 {
-          -webkit-transform: rotate(-27deg) translate(-3px, 6px);
-          transform: rotate(-27deg) translate(-3px, 6px);
-        }
-        
-        
-        
-        .bar2 {
-          -webkit-transform: rotate(45deg) translate(-8px, -8px);
-          transform: rotate(45deg) translate(-8px, -8px);
-        }
-    
-      }
-      .menu{
-        background-color: #ffccb3;
-        position: fixed;
-        z-index: 9;
-        height: 100vh;
-        width: 100vw;
-        top:0px;
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items:center;
-        
-        .menu-item{
-          font-size: 2rem;
-          padding:10px;
-          font-family: Noto Sans;
+  width: 100%;
+  padding-top: 2%;
+  background-color: #ffb692;
+  display: flex;
+  justify-content: center;
+  @media only screen and (max-width: 768px) {
+    .burger-menu {
+      display: inline-block;
+      cursor: pointer;
+      position: absolute;
+      top: 8px;
+      right: 20px;
+      z-index: 20;
 
-          
-          color: black;
-        }
+      .bar1,
+      .bar2 {
+        width: 40px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
       }
-    
-      .menu.hide{
-        display: none;
+      .bar1 {
+        margin-bottom: 12px;
+      }
+      .bar2 {
+        margin-left: 10px;
+        width: 30px;
+      }
+
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+      }
+
+      .change .bar2 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
       }
     }
-    .flex-container {
-      column-count: 2;
+    .burger-menu.active {
+      position: fixed;
+      .bar1 {
+        -webkit-transform: rotate(-27deg) translate(-3px, 6px);
+        transform: rotate(-27deg) translate(-3px, 6px);
+      }
+
+      .bar2 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+      }
+    }
+    .menu {
+      background-color: #ffccb3;
+      position: fixed;
+      z-index: 9;
+      height: 100vh;
+      width: 100vw;
+      top: 0px;
       display: flex;
-      width: 80%;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: space-between;
-      .right {
-        width: 100%;
-        
-        justify-content: flex-end;
-        @media screen and (max-width: 768px) {
-          display: none;
-        }
-        a {
-          margin-left: 20px;
-          color: black;
-          text-decoration: none;
-          margin-right: 20px;
-          padding: 0 5px 8px 5px;
-          font-weight: 700;
-          font-family: Montserrat;
-        }
-        a:hover {
-          border-bottom: 3px solid black;
-          font-family: Montserrat;
 
-          font-weight: 800;
-          
-                            }
-      }
-      .flex-left {
-        
-        img {
-          width: 20%;
-        }
+      .menu-item {
+        font-size: 2rem;
+        padding: 10px;
+        font-family: Noto Sans;
+
+        color: black;
       }
     }
-    .hide{
+
+    .menu.hide {
       display: none;
     }
   }
-  
+  .flex-container {
+    column-count: 2;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    .right {
+      width: 100%;
+
+      justify-content: flex-end;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+      a {
+        margin-left: 20px;
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        padding: 0 5px 8px 5px;
+        font-weight: 700;
+        font-family: Montserrat;
+      }
+      a:hover {
+        border-bottom: 3px solid black;
+        font-family: Montserrat;
+
+        // font-weight: 800;
+        -webkit-text-stroke: 0.5px black;
+      }
+    }
+    .flex-left {
+      img {
+        width: 20%;
+      }
+    }
+  }
+  .hide {
+    display: none;
+  }
+}
